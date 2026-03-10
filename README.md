@@ -31,7 +31,7 @@ tinystories-gpt2/
 │       ├── model/                 # trained GPT-2 model checkpoints: medium
 │       └── tokenizer/             # trained BPE tokenizer
 │   └── gpt2_small/
-│       ├── model/                 # trained GPT-2 model checkpoints : smmall
+│       ├── model/                 # trained GPT-2 model checkpoints : small
 │       └── tokenizer/ 
 ├── bpe_tokenizer_utils.py         # BPE tokenizer training and loading utilities
 ├── config_utils.py                # helper functions for loading YAML configs
@@ -59,11 +59,7 @@ data/prompts.txt
 data/references.txt
 
 ### 2. Build Tokenizer and Training Dataset
-This stage in file: gpt2.py:
-• downloads TinyStories
-• trains a BPE tokenizer
-• tokenizes the dataset
-• creates a language modeling dataset
+This stage in file: gpt2.py are downloads TinyStories, trains a BPE tokenizer, tokenizes the dataset and creates a language modeling dataset.
  
 
  The class TextGenatate loads TinyStories from HuggingFace, trains or loads a BPE tokenizer, tokenizes the dataset andgroups tokens into fixed blocks for LM training. 
@@ -94,11 +90,7 @@ python evaluation.py \
 
 
 ## Future Work
-Possible extensions:
-training larger GPT-2 variants
-comparison with Mamba architectures
-scaling experiments with different dataset sizes
-improved evaluation metrics
+Possible extensions are training larger GPT-2 variants, comparison with Mamba architectures, scaling experiments with different dataset sizes and improved evaluation metrics.
 
 ## References
 **TinyStories Dataset**: Ronen Eldan and Yuanzhi Li
