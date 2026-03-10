@@ -86,7 +86,6 @@ Evaluation is implemented in evaluation.py. The evaluation compares generated st
 Possible extensions are training larger GPT-2 variants, comparison with Mamba architectures, scaling experiments with different dataset sizes and improved evaluation metrics.
 
 ## References
-**TinyStories Dataset**: Ronen Eldan and Yuanzhi Li
-TinyStories: How Small Can Language Models Be? 2023
+ **TinyStories:** Eldan, R., & Li, Y. (2023). [TinyStories: How Small Can Language Models Be and Still Speak Coherent English?](https://arxiv.org/abs/2305.07759).
 
-**GPT-2**: Radford et al. Language Models are Unsupervised Multitask Learners OpenAI , 2019    
+**GPT-2**: Radford et al. (2019 ). [Language Models are Unsupervised Multitask Learners OpenAI ]  (https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
