@@ -79,14 +79,7 @@ After training, we can generate text, loads the trained GPT-2 model, loads the t
 
 ### 5. Evaluate Model Performance
 Evaluation is implemented in evaluation.py. The evaluation compares generated stories with reference stories using metrics.
-Run evaluation:
-```bash
-python evaluation.py \
-    --model_dir results/gpt2_medium/model \
-    --tokenizer_dir results/gpt2_medium/tokenizer \
-    --prompts data/prompts.txt \
-    --references data/references.txt
-```
+
 
 
 ## Future Work
