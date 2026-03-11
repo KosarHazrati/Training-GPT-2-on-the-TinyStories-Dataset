@@ -58,9 +58,6 @@ tinystories-gpt2/
 
 
 ## Result
-## Result: 
-We observe
-
 -  View Full Experiment [Table](https://github.com/KosarHazrati/Training-GPT-2-on-the-TinyStories-Dataset/blob/main/wandb_export_2026-03-09T11_31_59.190%2B01_00.csv) 
 
 
