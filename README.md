@@ -15,11 +15,11 @@ tinystories-gpt2/
 │
 ├── configs/                       # YAML configuration files
 │   ├── tokenizers/
-│   │   └── tinystories_1M.yaml    # tokenizer + dataset configuration
+│   │   └── tinystories_2k.yaml    # tokenizer + dataset configuration
 │   │    ...
 │   │   
 │   └── training/
-│     └── train_tinystories_1M.yaml # training hyperparameters
+│     └── train_tinystories_2k.yaml # training hyperparameters
 │      ...
 │
 ├── data/                          # evaluation datasets
