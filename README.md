@@ -3,11 +3,16 @@
 
 The project focuses on efficient narrative generation using relatively small models and evaluates their ability to generate coherent stories.
 The pipeline includes:
-Dataset preparation
-BPE tokenizer training
-GPT-2 model training
-Story generation
-Evaluation using metrics
+1. **Tokenizer training**
+   - A custom BPE tokenizer is trained on a subset of TinyStories.
+2. **Dataset preparation**
+   - The raw text corpus is tokenized and grouped into fixed-length blocks for causal language modeling.
+3. **Model training**
+   - A GPT-2 style language model is initialized from scratch and trained with Hugging Face `Trainer`.
+4. **Story generation**
+   - The trained model can generate continuations from a given prompt.
+5. **Evaluation**
+   - Generated stories are compared against references using metrics.
 The system is designed to be fully reproducible and configurable via YAML configuration files.
 
 ```Plaintext
@@ -15,11 +20,11 @@ tinystories-gpt2/
 │
 ├── configs/                       # YAML configuration files
 │   ├── tokenizers/
-│   │   └── tinystories_2k.yaml    # tokenizer + dataset configuration
+│   │   └── tinystories_1M.yaml    # tokenizer + dataset configuration
 │   │    ...
 │   │   
 │   └── training/
-│     └── train_tinystories_2k.yaml # training hyperparameters
+│     └── train_tinystories_1M.yaml # training hyperparameters
 │      ...
 │
 ├── data/                          # evaluation datasets
@@ -51,35 +56,12 @@ tinystories-gpt2/
 
 ```
 
-## Project Workflow
-### 1. Prepare Evaluation Data
-This script extracts prompts and reference stories from TinyStories.
-File: prepare_eval_data.py It loads the TinyStories dataset and writes:
-data/prompts.txt
-data/references.txt
 
-### 2. Build Tokenizer and Training Dataset
-This stage in file: gpt2.py are downloads TinyStories, trains a BPE tokenizer, tokenizes the dataset and creates a language modeling dataset.
- 
+## Result
+## Result: 
+We observe
 
- The class TextGenatate loads TinyStories from HuggingFace, trains or loads a BPE tokenizer, tokenizes the dataset andgroups tokens into fixed blocks for LM training. 
-
-Tokenizer training is implemented in: bpe_tokenizer_utils.py
-
-### 4. Train GPT-2 Model
-Training is implemented in file: gpt2_trainer.py
-
-
-It loads the tokenized dataset, builds a GPT-2 model from scratch, loads configuration from YAML and runs HuggingFace Trainer.
-
-
-### 4. Generate Stories
-After training, we can generate text, loads the trained GPT-2 model, loads the tokenizer, samples text using top-k / top-p sampling.
-
-
-### 5. Evaluate Model Performance
-Evaluation is implemented in evaluation.py. The evaluation compares generated stories with reference stories using metrics.
-
+-  View Full Experiment [Table](https://github.com/KosarHazrati/Training-GPT-2-on-the-TinyStories-Dataset/blob/main/wandb_export_2026-03-09T11_31_59.190%2B01_00.csv) 
 
 
 ## Future Work
