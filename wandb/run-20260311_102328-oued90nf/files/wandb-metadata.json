@@ -1,0 +1,17 @@
+{
+  "os": "macOS-15.3.1-arm64-arm-64bit",
+  "python": "CPython 3.11.5",
+  "startedAt": "2026-03-11T09:23:28.458307Z",
+  "program": "/Users/kosaralehosseini/Documents/pocket-narrator/gpt2/Training-GPT-2-on-the-TinyStories-Dataset/gpt2main.py",
+  "codePath": "gpt2main.py",
+  "codePathLocal": "gpt2main.py",
+  "git": {
+    "remote": "https://github.com/KosarHazrati/Training-GPT-2-on-the-TinyStories-Dataset.git",
+    "commit": "152c5747a972c0cecd76ea300d9d736bc9a73b9d"
+  },
+  "email": "kosar.hazrati@gmail.com",
+  "root": "/Users/kosaralehosseini/Documents/pocket-narrator/gpt2/Training-GPT-2-on-the-TinyStories-Dataset",
+  "host": "MacBook-Pro-von-Kosar.local",
+  "executable": "/Users/kosaralehosseini/anaconda3/bin/python",
+  "writerId": "b2px6zj39ggpb48vr1j1bfhialz1vmba"
+}

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/kosaralehosseini/Documents/pocket-narrator/gpt2/Training-GPT-2-on-the-TinyStories-Dataset/gpt2main.py", line 21, in <module>
+    text_generate = TextGenatate(tokenizer_cfg)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kosaralehosseini/Documents/pocket-narrator/gpt2/Training-GPT-2-on-the-TinyStories-Dataset/gpt2.py", line 21, in __init__
+    self.cfg = load_yaml(tokenizer_config_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kosaralehosseini/Documents/pocket-narrator/gpt2/Training-GPT-2-on-the-TinyStories-Dataset/config_utils.py", line 9, in load_yaml
+    with path.open("r") as f:
+         ^^^^^^^^^^^^^^
+  File "/Users/kosaralehosseini/anaconda3/lib/python3.11/pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'configs/tokenizers/tinystories_1M.yaml'
